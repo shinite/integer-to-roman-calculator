@@ -27,4 +27,12 @@ describe('Home', () => {
     const input = getByTestId("integer-input") as HTMLInputElement;
     expect(input.value).toBe("123");
   })
+
+  test("check onClick method to render roman value", () => {
+    const { getByTestId } = render(<Home/>
+    );
+    fireEvent.change(getByTestId("integer-input"), { target: { value: "24" } });
+    fireEvent.click(getByTestId('convert-button'));
+    expect(screen.getByTestId("result-container")).toHaveTextContent("XXIV");
+  });
 })

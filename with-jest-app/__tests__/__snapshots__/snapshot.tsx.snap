@@ -26,6 +26,10 @@ exports[`renders homepage unchanged 1`] = `
           Convert To Roman
         </button>
       </div>
+      <div
+        class="resultContainer"
+        data-testid="result-container"
+      />
     </main>
   </div>
 </div>
