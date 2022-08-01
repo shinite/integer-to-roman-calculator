@@ -9,6 +9,19 @@ exports[`renders homepage unchanged 1`] = `
       <h2>
         Integer To Roman Calculator
       </h2>
+      <div>
+        <input
+          data-testid="integer-input"
+          placeholder="Please enter a number"
+          type="text"
+          value=""
+        />
+        <button
+          data-testid="convert-button"
+        >
+          Convert To Roman
+        </button>
+      </div>
     </main>
   </div>
 </div>
