@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main>
+      <h2>
+        Integer To Roman Calculator
+      </h2>
+    </main>
+  </div>
+</div>
+`;
