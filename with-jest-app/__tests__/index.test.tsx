@@ -29,7 +29,7 @@ describe('Home', () => {
   })
 
   test("check onClick method to render roman value", () => {
-    const { getByTestId } = render(<Home/>
+    const { getByTestId } = render(<Home />
     );
     fireEvent.change(getByTestId("integer-input"), { target: { value: "24" } });
     fireEvent.click(getByTestId('convert-button'));
