@@ -1,0 +1,36 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.input {
+  width: 60%;
+  padding: 12px;
+}
+
+.button {
+  margin-left: 15px;
+  width: 20%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.resultContainer {
+  display: flex;
+  font-weight: bold;
+}
+
+.error {
+  color: #ef5350;
+}

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main>
+      <h2>
+        Integer To Roman Calculator
+      </h2>
+      <div
+        class="inputContainer"
+      >
+        <input
+          class="input"
+          data-testid="integer-input"
+          placeholder="Please enter a number"
+          type="text"
+          value=""
+        />
+        <button
+          class="button"
+          data-testid="convert-button"
+        >
+          Convert To Roman
+        </button>
+      </div>
+      <div
+        class="resultContainer"
+        data-testid="result-container"
+      />
+    </main>
+  </div>
+</div>
+`;
