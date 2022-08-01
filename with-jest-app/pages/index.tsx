@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "@/pages/index.module.css";
 import { ChangeEvent, useState } from "react";
-import { CONSTANTS } from "./_constants";
+import { CONSTANTS, TEST_CONSTANTS } from "./_constants";
 import { convertIntegerToRoman, validateInput } from "./_helper";
 
 export default function Home() {
@@ -58,17 +58,20 @@ export default function Home() {
             onChange={handleChange}
             value={value}
             placeholder={CONSTANTS.INPUT_PLACEHOLDER}
-            data-testid="integer-input"
+            data-testid={TEST_CONSTANTS.INPUT_VALUE}
           />
           <button
             className={styles.button}
             onClick={handleClick}
-            data-testid="convert-button"
+            data-testid={TEST_CONSTANTS.CONVERT_BUTTON}
           >
             {CONSTANTS.CONVERT}
           </button>
         </div>
-        <div className={styles.resultContainer} data-testid="result-container">
+        <div
+          className={styles.resultContainer}
+          data-testid={TEST_CONSTANTS.RESULT_CONTAINER}
+        >
           {result && displayResult()}
           {error && <div className={styles.error}>{error}</div>}
         </div>

@@ -4,13 +4,14 @@
 
 The Integer To Roman Calculator app is a next js app that allows user to convert an integer number to a roman numeral.
 
-## How to Use
+## Installation
 
-In your terminal, run the following command:
+1. Clone this repo by running `git clone https://github.com/shinite/integer-to-roman-calculator.git`
+2. `cd with-jest-app`
+3. `npm install`
+4. `npm run dev`
 
-```bash
-git clone git@github.com:shinite/integer-to-roman-calculator.git
-cd with-jest-app
-npm install
-npm run dev
-```
+## Testing
+
+To test the app run the following command:
+`npm run test`
