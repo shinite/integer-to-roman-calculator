@@ -31,9 +31,9 @@ export default function Home() {
       </Head>
       <main>
         <h2>{CONSTANTS.HEADING}</h2>
-        <div>
-          <input type="text" onChange={handleChange} value={integerValue} placeholder={CONSTANTS.INPUT_PLACEHOLDER} data-testid="integer-input" />
-          <button onClick={handleClick} data-testid="convert-button">{CONSTANTS.CONVERT}</button>
+        <div className={styles.inputContainer}>
+          <input className={styles.input} type="text" onChange={handleChange} value={integerValue} placeholder={CONSTANTS.INPUT_PLACEHOLDER} data-testid="input-search" />
+          <button className={styles.button} onClick={handleClick} data-testid="convert-button">{CONSTANTS.CONVERT}</button>
         </div>
       </main>
     </div>
